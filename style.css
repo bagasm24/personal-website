@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+a{
+    text-decoration: none;
+    color: #191717;
+}
+
+header{
+    padding: 18px 100px;
+    background-color: #94A684;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #191717;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.navbar ul li{
+    font-size: 16px;
+    padding: 5px 15px;
+}
+
+.navbar ul li:hover{
+    background-color: #E4E4D0;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+#jumbotron{
+    height: 475px;
+    background-color: #94A684;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+#jumbotron .text{
+    width: 50%;
+}
+
+#jumbotron .text h2{
+    font-size: 50px;
+}
+
+#jumbotron .text .social-media{
+    margin-top: 18px;
+    display: flex;
+    gap: 20px;
+}
+
+#jumbotron .text button{
+    border-radius: 20px;
+    background-color: #191717;
+    border: 0;
+    padding: 8px 20px;
+    margin-top: 18px;
+}
+
+#jumbotron .text button a{
+    color: #E4E4D0;
+}
