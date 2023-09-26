@@ -12,9 +12,11 @@ a{
     color: #191717;
 }
 
+/* Homepage */
 header{
     padding: 18px 100px;
-    background-color: #94A684;
+    background-color: #E4E4D0;
+    border-bottom: 1px solid #191717;
 }
 
 nav{
@@ -36,14 +38,14 @@ nav{
 }
 
 .navbar ul li:hover{
-    background-color: #E4E4D0;
+    background-color: #FFEEF4;
     padding: 5px 15px;
     border-radius: 20px;
 }
 
 #jumbotron{
     height: 475px;
-    background-color: #94A684;
+    background-color: #E4E4D0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -74,4 +76,53 @@ nav{
 
 #jumbotron .text button a{
     color: #E4E4D0;
+}
+
+#jumbotron .image .image-setting{
+    width: 300px;
+    height: 300px;
+    background-image: url(asset/img.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid #191717;
+    border-radius: 20px;
+}
+
+/* About Page */
+#about{
+    background-color: #E4E4D0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+#about .about-text{
+    width: 50%;
+}
+
+#about .about-text h4{
+    margin-bottom: 20px;
+}
+
+#about .about-text p{
+    margin-bottom: 20px;
+}
+
+#about .about-text .about-tech ul{
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+}
+
+#about .about-text .about-tech li{
+    margin: 10px;
+    list-style-type: none;
+}
+
+#about .about-img{
+    width: 300px;
+    height: 500px;
+    border: 2px solid #191717;
 }
