@@ -131,7 +131,7 @@ nav{
 }
 
 #about .about-text h4{
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
     width: 20%;
     border-bottom:2px solid #191717;
@@ -154,15 +154,18 @@ nav{
 #tech{
     padding: 30px;
     text-align: center;
-    background-color: #E4E4D0;
 }
 
 #tech h4{
-    font-size: 20px;    
+    font-size: 20px; 
+}
+
+#tech p{
+    color: #7D7C7C;
 }
 
 #tech .about-tech ul{
-    padding: 20px 0;
+    padding: 20px 0 15px 0;
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: space-around;
@@ -171,6 +174,102 @@ nav{
 #tech .about-tech li{
     margin: 10px;
     list-style-type: none;
+}
+
+
+/* Portfolio Page */
+#project{
+    padding: 50px 50px 20px 50px;
+    background-color: #F1EFEF;
+}
+
+#project .project-title{
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 10%;
+    border-bottom:2px solid #191717;
+    margin-left: 50px;
+}
+
+#project .project-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    margin-bottom: 20px;
+}
+
+#project .project-content h5{
+    font-size: 20px;
+    width: 15%;
+}
+
+#project .project-content p{
+    width: 50%;
+    font-size: 12px;
+}
+
+#project .portfolio{
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#project .portfolio .portfolio-text{
+    width: 50%;
+}
+
+#project .portfolio .portfolio-text h5{
+    font-size: 17px;
+}
+
+#project .portfolio .portfolio-text p{
+    font-size: 15px;
+    padding: 20px 0;
+    color: #7D7C7C;
+}
+
+#project .portfolio .portfolio-text a button{
+    border-radius: 20px;
+    background-color: #191717;
+    border: 0;
+    padding: 8px 20px;
+    margin-top: 18px;
+    color: #E4E4D0;
+    font-weight: 600;
+}
+
+#project .pemisah{
+    content: "";
+    height: 0px;
+    border: 1px solid #E4E4D0;
+    margin-top: 30px;
+}
+
+#setrifikat{
+    padding: 50px;
+}
+
+#setrifikat .sertifikat-text{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#setrifikat .sertifikat-text h4{
+    font-size: 20px;
+}
+
+#setrifikat .sertifikat-text p{
+    font-size: 15px;
+    color: #7D7C7C;
+}
+
+#setrifikat .sertifikat-img{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    gap: 50px;
 }
 
 
@@ -193,6 +292,7 @@ footer .hero-footer h4{
 
 footer .hero-footer p{
     margin-bottom: 20px;
+    color: #7D7C7C;
 }
 
 footer .hero-footer p span a:hover{
