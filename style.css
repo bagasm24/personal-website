@@ -16,7 +16,7 @@ a{
 header{
     padding: 18px 100px;
     background-color: #E4E4D0;
-    border-bottom: 1px solid #191717;
+    border-bottom: 1px solid #7D7C7C;
 }
 
 nav{
@@ -34,18 +34,19 @@ nav{
 
 .navbar ul li{
     font-size: 16px;
-    padding: 5px 15px;
+    padding: 6px 16px;
 }
 
 .navbar ul li:hover{
-    background-color: #FFEEF4;
+    background-color: #F1EFEF;
     padding: 5px 15px;
     border-radius: 20px;
+    border: 1px solid #191717;
 }
 
 #jumbotron{
     height: 475px;
-    background-color: #E4E4D0;
+    background-color: #F1EFEF;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -53,11 +54,24 @@ nav{
 }
 
 #jumbotron .text{
-    width: 50%;
+    width: 60%;
 }
 
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
 #jumbotron .text h2{
+    overflow: hidden;
+    animation: typing 3s steps(30, end);
     font-size: 50px;
+    white-space: nowrap;
+    letter-spacing: 2px;
 }
 
 #jumbotron .text .social-media{
@@ -65,6 +79,16 @@ nav{
     display: flex;
     gap: 20px;
 }
+
+.social-media a svg{
+    fill: #7D7C7C; 
+}
+
+.social-media a svg:hover{
+    fill: #191717; 
+    transition: 0.5s;
+}
+
 
 #jumbotron .text button{
     border-radius: 20px;
@@ -74,8 +98,14 @@ nav{
     margin-top: 18px;
 }
 
+#jumbotron .text button:hover{
+    background-color: #7D7C7C;
+    transition: 0.5s;
+}
+
 #jumbotron .text button a{
     color: #E4E4D0;
+    font-weight: 600;
 }
 
 #jumbotron .image .image-setting{
@@ -90,10 +120,9 @@ nav{
 
 /* About Page */
 #about{
-    background-color: #E4E4D0;
+    background-color: #F1EFEF;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     padding: 50px;
 }
 
@@ -102,27 +131,122 @@ nav{
 }
 
 #about .about-text h4{
+    font-size: 20px;
     margin-bottom: 20px;
+    width: 20%;
+    border-bottom:2px solid #191717;
 }
 
 #about .about-text p{
     margin-bottom: 20px;
 }
 
-#about .about-text .about-tech ul{
+#about .about-img{
+    width: 300px;
+    height: 500px;
+    border: 1px solid #191717;
+    border-radius: 20px;
+    background-image: url(asset/bagas.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#tech{
+    padding: 30px;
+    text-align: center;
+    background-color: #E4E4D0;
+}
+
+#tech h4{
+    font-size: 20px;    
+}
+
+#tech .about-tech ul{
     padding: 20px 0;
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: space-around;
 }
 
-#about .about-text .about-tech li{
+#tech .about-tech li{
     margin: 10px;
     list-style-type: none;
 }
 
-#about .about-img{
-    width: 300px;
-    height: 500px;
-    border: 2px solid #191717;
+
+/* Footer */
+footer{
+    padding: 50px 50px 20px 50px;
+    background-color: #F1EFEF;
+}
+
+footer .hero-footer{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+footer .hero-footer h4{
+    font-size: 30px;
+    padding: 0 0 20px 0;
+}
+
+footer .hero-footer p{
+    margin-bottom: 20px;
+}
+
+footer .hero-footer p span a:hover{
+    color: #7D7C7C;
+}
+
+footer .hero-footer button{
+    border-radius: 20px;
+    background-color: #191717;
+    border: 0;
+    padding: 10px 30px;
+    margin-top: 18px;
+}
+
+footer .hero-footer button a{
+    color: #E4E4D0;
+    font-weight: 600;
+}
+
+footer .end-footer .nav-footer{
+    margin-top: 60px;
+}
+
+footer .end-footer .nav-footer ul{
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+footer .end-footer .nav-footer li{
+    list-style-type: none;
+}
+
+footer .end-footer .nav-footer ul li a:hover{
+    color: #7D7C7C;
+}
+
+footer .end-footer .cr-footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+} 
+
+footer .end-footer .cr-footer .icon{
+    display: flex;
+    gap: 20px;
+}
+
+footer .end-footer .cr-footer .icon a svg{
+    fill: #7D7C7C; 
+}
+
+footer .end-footer .cr-footer .icon a svg:hover{
+    fill: #191717; 
+    transition: 0.5s;
 }
