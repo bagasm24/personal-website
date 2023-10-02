@@ -191,29 +191,13 @@ nav{
     margin-left: 50px;
 }
 
-#project .project-content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 50px;
-    margin-bottom: 20px;
-}
-
-#project .project-content h5{
-    font-size: 20px;
-    width: 15%;
-}
-
-#project .project-content p{
-    width: 50%;
-    font-size: 12px;
-}
-
 #project .portfolio{
     padding: 0 40px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: white;
+    border-radius: 20px;
 }
 
 #project .portfolio .portfolio-text{
@@ -240,10 +224,14 @@ nav{
     font-weight: 600;
 }
 
+#project .portfolio .portfolio-text a button:hover{
+    background-color: #7D7C7C;
+    transition: 0.5s;
+}
+
 #project .pemisah{
     content: "";
     height: 0px;
-    border: 1px solid #E4E4D0;
     margin-top: 30px;
 }
 
@@ -272,6 +260,70 @@ nav{
     gap: 50px;
 }
 
+
+/* Blog / Artikel */
+
+#artikel{
+    padding: 50px 50px 20px 50px;
+    background-color: #F1EFEF;
+}
+
+#artikel .artikel-title{
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 10%;
+    border-bottom:2px solid #191717;
+    margin-left: 50px;
+}
+
+#artikel .artikel-content{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    padding: 20px 50px;
+    margin-bottom: 20px;
+    gap: 50px;
+    justify-items: center;
+}
+
+#artikel .artikel-content .content{
+    width: 70%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#artikel .artikel-content .content h4{
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+#artikel .artikel-content .content p{
+    font-size: 15px;
+    color: #7D7C7C;
+    margin-bottom: 5px;
+}
+
+#artikel .artikel-content .content .penulis{
+    display: flex;
+    justify-content: space-between;
+}
+
+#artikel .artikel-content .content a button{
+    border-radius: 20px;
+    background-color: #191717;
+    border: 0;
+    padding: 8px 20px;
+    margin-top: 10px;
+    color: #E4E4D0;
+    font-weight: 600;
+    width: 100%;
+}
+
+#artikel .artikel-content .content a button:hover{
+    background-color: #7D7C7C;
+    transition: 0.5s;
+}
 
 /* Footer */
 footer{
